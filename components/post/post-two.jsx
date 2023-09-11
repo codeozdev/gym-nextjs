@@ -27,7 +27,7 @@ export default function PostTwo() {
               guide!
             </p>
 
-            <Link href='/'>
+            <Link href='https://subscribe.slayapp.com/register' target='_blank'>
               <button className='uppercase mt-5 bg-[#ff8f4b] hover:bg-orange-500 p-2 sm:py-3 sm:px-4 rounded-full text-white font-medium w-full sm:w-fit'>
                 Start Today
               </button>

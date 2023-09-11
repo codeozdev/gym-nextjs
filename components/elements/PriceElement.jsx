@@ -53,5 +53,3 @@ export default function PriceElement() {
     </div>
   )
 }
-
-// src={data[currentSlide].image}
