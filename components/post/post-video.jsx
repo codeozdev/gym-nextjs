@@ -15,6 +15,7 @@ export default function PostVideo() {
         autoPlay
         loop
         controls
+        muted
         playsInline
         className='object-cover w-full h-full hidden sm:block'
       />
