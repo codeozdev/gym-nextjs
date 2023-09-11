@@ -14,7 +14,7 @@ export default function EffectHamburgerIcon() {
   }
 
   return (
-    <div className='flex z-50 '>
+    <div className='flex z-50'>
       {!nav ? (
         <HiMenuAlt3
           onClick={handleNav}
@@ -37,38 +37,30 @@ export default function EffectHamburgerIcon() {
         <div className='flex flex-col justify-between h-full text-lg font-semibold'>
           <ul className='space-y-5 mt-40 flex items-center  flex-col text-2xl'>
             <li>
-              <Link href={'/'} className=''>
-                Home
-              </Link>
+              <Link href={'/'}>Home</Link>
             </li>
             <li>
-              <Link href={'/shop'} className=''>
-                Shop
-              </Link>
+              <Link href={'https://shop.slayapp.com'}>Shop</Link>
             </li>
             <li>
-              <Link href={'/supplements'} className=''>
-                Supplements
-              </Link>
+              <Link href={'https://bloomnu.com/'}>Supplements</Link>
             </li>
             <li>
-              <Link href={'/support'} className=''>
-                Support
-              </Link>
+              <Link href={'https://slayapp.zendesk.com/hc/en-gb'}>Support</Link>
             </li>
           </ul>
           <div className='bg-neutral-100 flex justify-between items-center'>
-            <Link href='/' className='flex items-center gap-2 p-5'>
+            <Link
+              href='https://subscribe.slayapp.com/register'
+              className='flex items-center gap-2 p-5'>
               <AiOutlineUser size={25} />
               Login
             </Link>
             <div className='flex items-center gap-2 p-5'>
-              <Link href='https://m.youtube.com/c/marifitness' target='_blank'>
-                <AiFillYoutube size={25} className='' />
+              <Link href='https://m.youtube.com/c/marifitness'>
+                <AiFillYoutube size={25} />
               </Link>
-              <Link
-                href='https://www.instagram.com/theslayapp/?hl=en'
-                target='_blank'>
+              <Link href='https://www.instagram.com/theslayapp/?hl=en'>
                 <AiFillInstagram size={25} />
               </Link>
             </div>
@@ -78,7 +70,3 @@ export default function EffectHamburgerIcon() {
     </div>
   )
 }
-
-// setShowPassword(prevState => !prevState)
-// https://m.youtube.com/c/marifitness
-// https://www.instagram.com/theslayapp/?hl=en

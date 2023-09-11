@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.swiper {
+  @apply mt-5 sm:mt-10 sm:h-[300px] sm:w-[1000px] h-[280px];
+}
 
+.swiper-slide p {
+  @apply text-sm sm:text-base  text-neutral-600;
+}
+
+.swiper-slide img {
+  @apply object-contain;
+}

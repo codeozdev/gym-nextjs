@@ -1,10 +1,10 @@
 import PaddingContainer from '@/components/layout/padding-container'
-import PostVideo from '@/components/post/post-video'
 import PriceElement from '@/components/elements/PriceElement'
+import Link from 'next/link'
 
 export default function PostThree() {
   return (
-    <div className='px-7 my-10'>
+    <div className='sm:px-7 my-10'>
       <div className='bg-[#f8f3ec] py-10 sm:py-20 rounded-xl'>
         <PaddingContainer>
           <div className='flex flex-col sm:flex-row items-center w-full gap-5 sm:gap-10'>
@@ -33,17 +33,25 @@ export default function PostThree() {
                 <h2 className='text-xl font-extrabold mb-5'>Bi-Annual</h2>
                 <p className='text-4xl font-bold'>$53.99</p>
                 <span className='text-xs text-neutral-500'>$0.30 per day</span>
-                <button className='mt-5 bg-[#ff8f4b] px-7 py-2 rounded-lg text-white'>
-                  Subscribe
-                </button>
+                <Link
+                  href='https://subscribe.slayapp.com/register'
+                  target='_blank'>
+                  <button className='mt-5 bg-[#ff8f4b] px-7 py-2 rounded-lg text-white'>
+                    Subscribe
+                  </button>
+                </Link>
               </div>
               <div className='bg-white px-3 py-14 text-center rounded-lg hover:scale-105 duration-200 ease-in transition relative'>
                 <h2 className='text-xl font-extrabold mb-5'>Year</h2>
                 <p className='text-4xl font-bold'>$83.99</p>
                 <span className='text-xs text-neutral-500'>$0.23 per day</span>
-                <button className='mt-5 bg-[#ff8f4b] px-7 py-2 rounded-lg text-white'>
-                  Subscribe
-                </button>
+                <Link
+                  href='https://subscribe.slayapp.com/register'
+                  target='_blank'>
+                  <button className='mt-5 bg-[#ff8f4b] px-7 py-2 rounded-lg text-white'>
+                    Subscribe
+                  </button>
+                </Link>
                 <p className='absolute -top-3 text-white left-10 bg-[#ff8f4b] rounded-full px-4 py-1'>
                   Best Value
                 </p>
@@ -52,9 +60,13 @@ export default function PostThree() {
                 <h2 className='text-xl font-extrabold mb-5'>Monthly</h2>
                 <p className='text-4xl font-bold'>$9.99</p>
                 <span className='text-xs text-neutral-500'>$0.33 per day</span>
-                <button className='mt-5 bg-[#ff8f4b] px-7 py-2 rounded-lg text-white'>
-                  Subscribe
-                </button>
+                <Link
+                  href='https://subscribe.slayapp.com/register'
+                  target='_blank'>
+                  <button className='mt-5 bg-[#ff8f4b] px-7 py-2 rounded-lg text-white'>
+                    Subscribe
+                  </button>
+                </Link>
               </div>
             </div>
             <PriceElement />

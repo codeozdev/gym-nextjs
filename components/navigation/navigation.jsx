@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import PaddingContainer from '@/components/layout/padding-container'
-import NavbarButton from '@/components/elements/NavbarButton'
+import NavbarButton from '@/components/elements/MobilButton'
 
 export default function Navigation() {
   return (
@@ -25,28 +25,32 @@ export default function Navigation() {
             </li>
             <li>
               <Link
-                href={'/shop'}
+                href={'https://shop.slayapp.com/'}
+                target='_blank'
                 className='hover:underline hover:text-black hidden sm:inline'>
                 Shop
               </Link>
             </li>
             <li>
               <Link
-                href={'/supplements'}
+                href={'https://bloomnu.com/'}
+                target='_blank'
                 className='hover:underline hover:text-black hidden sm:inline'>
                 Supplements
               </Link>
             </li>
             <li>
               <Link
-                href={'/support'}
+                href={'https://slayapp.zendesk.com/hc/en-gb'}
+                target='_blank'
                 className='hover:underline hover:text-black hidden sm:inline'>
                 Support
               </Link>
             </li>
             <li>
               <Link
-                href={'/sign-in'}
+                href={'https://subscribe.slayapp.com/register'}
+                target='_blank'
                 className='bg-[#ff8f4b] hover:bg-orange-500 p-2 sm:py-3 sm:px-4 rounded-full text-white font-medium'>
                 Join Now
               </Link>
